@@ -1,14 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox
 from controller.produto_controller import ProdutoController
-from view.interface import Interface
 
 class ProdutoApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Aplicação de Produtos")
         self.produto_controller = ProdutoController()
-        self.interface = Interface()
 
         # Inicializando variáveis para armazenar widgets
         self.label = None
